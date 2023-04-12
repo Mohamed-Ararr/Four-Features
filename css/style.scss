@@ -1,0 +1,101 @@
+$blue-grey-color: hsl(234, 12%, 34%);
+$p-grey-color: #bebebe;
+
+* {
+  margin: 0 !important;
+  font-family: "Poppins", sans-serif;
+  text-transform: capitalize;
+  box-sizing: border-box;
+  //   font-size: 15px !important;
+}
+
+@media (max-width: 830px) {
+  main {
+    padding-top: 20px;
+    height: 150vh !important;
+    align-items: start !important;
+    .container {
+      .features-box {
+        flex-direction: column !important;
+      }
+    }
+  }
+}
+
+main {
+  height: 100vh;
+  display: flex !important;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background-color: hsl(0, 0%, 98%);
+  //   background-color: grey;
+  .container {
+    .head-box {
+      margin-bottom: 20px !important;
+      h1 {
+        letter-spacing: 0.5px;
+        color: $blue-grey-color;
+        margin-bottom: 15px !important;
+        span {
+          font-weight: 300;
+        }
+      }
+      p {
+        max-width: 500px;
+        margin: auto !important;
+        color: $p-grey-color;
+        font-size: 0.8em;
+      }
+    }
+    .features-box {
+      padding: 20px;
+      //   height: 300px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 20px;
+      .box {
+        box-shadow: hsl(229, 6%, 66%) 0px 5px 15px;
+        background-color: white;
+        width: 250px;
+        height: 180px;
+        text-align: start !important;
+        padding: 15px;
+        border-radius: 5px 5px 10px 10px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        h3 {
+          font-size: 0.95em;
+        }
+        p {
+          color: #bebebe;
+          line-height: 1.5;
+          font-size: 0.65em;
+        }
+        img {
+          width: 30px;
+          align-self: end;
+        }
+      }
+      .supervisor-box {
+        border-top: 4px solid hsl(0, 78%, 62%);
+      }
+      .team-box {
+        border-top: 4px solid hsl(180, 62%, 55%);
+      }
+      .karma-box {
+        border-top: 4px solid hsl(34, 97%, 64%);
+      }
+      .calculator-box {
+        border-top: 4px solid hsl(212, 86%, 64%);
+      }
+      .merged-box {
+        .team-box {
+          margin-bottom: 20px !important;
+        }
+      }
+    }
+  }
+}
